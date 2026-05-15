@@ -5,20 +5,50 @@
     <title>East Asia Gender Equality Network</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/serif.min.css">
+    
     <style>
-        :root { --r-main-color: #2c3e50; --r-heading-color: #8e44ad; --r-background-color: #fdfaf6; }
+        /* 全域樣式設定 */
+        :root { 
+            --r-main-color: #2c3e50; 
+            --r-heading-color: #8e44ad; 
+            --r-background-color: #fdfaf6; 
+        }
         .reveal { background-color: #fdfaf6; }
-        .partner-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; font-size: 0.5em; text-align: center; }
-        .partner-item { border: 1px solid #ddd; padding: 10px; background: white; border-radius: 5px; }
+        
+        /* Slide 3 專用的 Logo 網格佈局 */
+        .partner-grid { 
+            display: grid; 
+            grid-template-columns: repeat(6, 1fr); /* 調整為 6 欄以容納 18 個以上 */
+            gap: 8px; 
+            font-size: 0.35em; 
+            text-align: center; 
+            margin-top: 20px;
+        }
+        .partner-item { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            background: white; 
+            border-radius: 5px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .partner-item img {
+            max-height: 35px; /* 控制 Logo 高度一致 */
+            margin-bottom: 5px;
+            object-fit: contain;
+        }
+
+        /* 時間軸與其他樣式 */
         .timeline { border-left: 3px solid #8e44ad; padding-left: 20px; text-align: left; margin-left: 50px; }
-        .step { margin-bottom: 20px; }
         .highlight { color: #d35400; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
-            
+
             <section>
                 <h2 style="font-size: 1.5em;">The Roots of Sisterhood</h2>
                 <h3 style="font-size: 0.8em; color: #666;">Legacy of the East Asian Women's Forum (1994–2006)</h3>
@@ -30,6 +60,7 @@
                 </div>
             </section>
 
+
             <section>
                 <h2 style="font-size: 1.5em;">Rebirth & Strategic Shift</h2>
                 <h3 style="font-size: 0.8em; color: #666;">Facing Contemporary Challenges (2022–Present)</h3>
@@ -40,21 +71,37 @@
                 </ul>
             </section>
 
+
             <section>
-                <h2 style="font-size: 1.5em;">Building the Bedrock</h2>
-                <h3 style="font-size: 0.7em; color: #666;">Our Growing Regional Network</h3>
+                <h2 style="font-size: 1.2em;">Building the Bedrock</h2>
+                <h3 style="font-size: 0.6em; color: #666;">Our Growing Regional Network</h3>
+                
                 <div class="partner-grid">
-                    <div class="partner-item">TWRF</div>
-                    <div class="partner-item">Glocal Action</div>
-                    <div class="partner-item">STARS</div>
-                    <div class="partner-item">Garden of Hope</div>
-                    <div class="partner-item">Fisher Fdn (JP)</div>
-                    <div class="partner-item">KWF (KR)</div>
-                    <div class="partner-item">Bulaohan</div>
-                    <div class="partner-item">...and 30+ more</div>
+                    <div class="partner-item"><img src="logo1.png">TWRF</div>
+                    <div class="partner-item"><img src="logo2.png">Glocal Action</div>
+                    <div class="partner-item"><img src="logo3.png">STARS</div>
+                    <div class="partner-item"><img src="logo4.png">GOH</div>
+                    <div class="partner-item"><img src="logo5.png">TAPCPR</div>
+                    <div class="partner-item"><img src="logo6.png">Awakening</div>
+
+                    <div class="partner-item"><img src="logo7.png">KWEA (JP)</div>
+                    <div class="partner-item"><img src="logo8.png">DV Prevention</div>
+                    <div class="partner-item"><img src="logo9.png">Fisher Fdn</div>
+                    <div class="partner-item"><img src="logo10.png">SPF (JP)</div>
+                    <div class="partner-item"><img src="logo11.png">GE Academy</div>
+                    <div class="partner-item"><img src="logo12.png">WAN (JP)</div>
+
+                    <div class="partner-item"><img src="logo13.png">KRISS (KR)</div>
+                    <div class="partner-item"><img src="logo14.png">KAFWST</div>
+                    <div class="partner-item"><img src="logo15.png">KWF (KR)</div>
+                    <div class="partner-item"><img src="logo16.png">SHARPS</div>
+                    <div class="partner-item"><img src="logo17.png">KWPI (KR)</div>
+                    <div class="partner-item" style="background: #eee;"><strong>+ More</strong></div>
                 </div>
-                <p style="font-size: 0.6em; margin-top: 20px;">A diverse coalition of NGOs, researchers, and advocates across Taiwan, Japan, and South Korea.</p>
+                
+                <p style="font-size: 0.5em; margin-top: 20px;">A diverse coalition of NGOs, researchers, and advocates across Taiwan, Japan, and South Korea.</p>
             </section>
+
 
             <section>
                 <h2 style="font-size: 1.2em;">Roadmap to Sustainability</h2>
@@ -65,6 +112,7 @@
                     <p><strong>Joint Advocacy:</strong> Establishing rapid-response mechanisms for emerging regional gender crises.</p>
                 </div>
             </section>
+
 
             <section>
                 <h2 style="font-size: 1.5em;">Co-Creation: Next Steps</h2>
@@ -78,7 +126,14 @@
 
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-    <script>Reveal.initialize({ hash: true, slideNumber: 'c/t' });</script>
+    <script>
+        Reveal.initialize({ 
+            hash: true, 
+            slideNumber: 'c/t',
+            center: true 
+        });
+    </script>
 </body>
 </html>
